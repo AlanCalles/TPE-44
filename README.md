@@ -7,5 +7,4 @@ Descripcion: Pagina dedicada a sistema de distrubuidora mayorista.
 
 Diagrama:
 
-![diagrama](https://github.com/user-attachments/assets/69ac5b98-810a-4743-beff-5ff4f1c1dc27)
-
+![DER_distribuidora](https://github.com/user-attachments/assets/57b3771a-4274-4510-b8dc-d6c476a3c434)
