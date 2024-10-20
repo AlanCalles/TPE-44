@@ -8,3 +8,7 @@ Descripcion: Pagina dedicada a sistema de distrubuidora mayorista.
 Diagrama:
 
 ![DER_distribuidora](https://github.com/user-attachments/assets/57b3771a-4274-4510-b8dc-d6c476a3c434)
+
+Importar el archivo distrubuidora.sql dentro de PHPMyAdmin para tener la base de datos completa.
+
+Usuario: webadmin@gmail.com pass: admin
