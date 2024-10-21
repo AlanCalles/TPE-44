@@ -1,0 +1,34 @@
+<?php 
+class SingularItem{
+    const BASE_URL = 'http://localhost/web2/tp2/';
+function showItem($item){
+  $itemS = $item[0]
+  ?>
+<?php require_once 'C:/xampp/htdocs/web2/tp2/templates/header.phtml' ?>
+<ul>
+
+    <li>
+        <div>
+            <?php echo "nombre:" . $itemS ["nombre"]."/";?>
+            <?php echo "apellido:". $itemS ["apellido"]."/";?>     
+            <?php echo "producto comprado:" . $itemS ["nombre_producto"]."/";?>            
+            <?php echo "tipo de compra:" . $itemS ["tipoDeCompra"];?>            
+        </div>
+        <div>
+            <a href="<?= BASE_URL ?>delete/<?php echo $itemS['id']?>"  class="btn btn-primary" type="button">borrar</a>
+        </div>
+
+    
+        <div>
+        <a href="<?= BASE_URL ?>listar" class="btn btn-primary">mostrar menos</a>
+        </div>
+      
+    </li>
+
+</ul>
+
+<?php
+
+
+}
+}

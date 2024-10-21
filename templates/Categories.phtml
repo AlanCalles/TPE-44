@@ -1,0 +1,28 @@
+<?php
+class Categories{
+    const BASE_URL = 'http://localhost/web2/tp2/';
+function showCategorias($task){
+ require_once 'C:/xampp/htdocs/web2/tp2/templates/header.phtml'
+
+ ?>
+<nav class="navbar bg-body-tertiary">
+  <div class="container-fluid">
+    <form action="listarOf" class="d-flex" method="post">
+      <select name="buscar" id="categoria">
+          <?php foreach ($task as $task) {  ?>
+             <option value="<?php echo $task->categoria?>"> <?php echo $task->categoria?> </option> 
+          <?php }?>
+      </select>
+
+      <button class="btn btn-outline-success" type="submit">Search</button>
+
+    </form>
+    
+  </div>
+</nav>
+
+<?php
+
+
+}
+}
