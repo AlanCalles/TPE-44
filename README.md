@@ -11,4 +11,4 @@ Diagrama:
 
 Importar el archivo distrubuidora.sql dentro de PHPMyAdmin para tener la base de datos completa.
 
-Usuario: webadmin@gmail.com pass: admin
+Usuario: roark.nahuelthiago@gmail.com pass: admin
