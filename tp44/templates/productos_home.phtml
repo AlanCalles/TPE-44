@@ -1,0 +1,28 @@
+<?php require 'templates/layout/header.phtml' ?>
+
+<div class="container my-5">
+    <h3 class="text-center mb-4"><b>Lista de Compradores y sus Productos</b></h3>
+    
+    <form action="home" method="POST">
+        <ul class="list-group">
+            <?php foreach($products as $product): ?>
+                <li class="list-group-item d-flex justify-content-between align-items-center item-product mb-2 p-3">
+                    <div>
+                        <!-- Nombre del comprador -->
+                        <strong><?= htmlspecialchars($product->nombre) ?> <?= htmlspecialchars($product->apellido) ?></strong>
+                        
+                        <!-- Producto y Tipo de Compra con etiquetas -->
+                        <div class="mt-2">
+                            <span class="badge bg-light text-dark">PRODUCTO:</span> 
+                            <?= htmlspecialchars($product->nombre_producto) ?>
+                        </div>
+                        <div>
+                            <span class="badge bg-light text-dark">CATEGORIA:</span> 
+                            <?= htmlspecialchars($product->tipoDeCompra) ?>
+                        </div>
+                    </div>
+                </li>
+            <?php endforeach; ?>
+        </ul>
+    </form>
+</div>

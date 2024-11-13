@@ -1,0 +1,15 @@
+<?php require 'templates/layout/header.phtml' ?>
+
+<h1>Editar producto</h1>
+<form method='post' action='editar'>
+<label for="nombre">Nombre:</label>
+    <input type="text" name="nombre" id="nombre" value="<?= htmlspecialchars($product->nombre) ?>" >
+
+    <label for="apellido">Apellido:</label>
+    <input type="text" name="apellido" id="apellido" value="<?= htmlspecialchars($product->apellido) ?>" >
+
+    <label for="producto">Producto:</label>
+    <input type="text" name="producto" id="producto" value="<?= htmlspecialchars($product->producto) ?>" >
+
+    <button type="submit">Guardar cambios</button>
+</form>
